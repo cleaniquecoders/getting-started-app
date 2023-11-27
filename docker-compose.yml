@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3'
 
 services:
   getting-started:
@@ -6,7 +6,5 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - todo-db:/etc/todos
+      - ./todo-db:/etc/todos
 
-volumes:
-  todo-db:
