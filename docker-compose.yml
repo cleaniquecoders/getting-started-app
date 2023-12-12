@@ -2,9 +2,11 @@ version: '3'
 
 services:
   getting-started:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: getting-started
     ports:
       - "3000:3000"
     volumes:
       - ./todo-db:/etc/todos
-
